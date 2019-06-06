@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ECEEEE;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  
+  
+  .ColumnsWrapper{
+    display: flex;
+    flex-flow: row;
+    
+    .Column{
+      flex-grow: 1;
+      margin-left: 16px;
+      .title{
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Item{
+        background-color: white;
+        border-bottom: 1px solid rgba(189, 195, 199, 0.6);
+        padding: 14px 8px;
+        display: flex;
+        justify-content: space-between;
+        
+        p{
+          margin: 0;
+        }
+      }
+    }
+    
+    .buffer{
+      flex-basis: 25px;
+    }
+  }
+  
+}
